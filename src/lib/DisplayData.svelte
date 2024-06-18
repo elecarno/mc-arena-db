@@ -2,7 +2,7 @@
 <script>
     import { onMount } from 'svelte';
     
-    let items = [];
+    let items;
   
     onMount(async () => {
       try {
@@ -16,7 +16,7 @@
         console.error('Error fetching data:', error);
       }
     });
-  </script>
+</script>
   
 <h2>Data from JSON:</h2>
 <pre>{JSON.stringify(items, null, 2)}</pre>
